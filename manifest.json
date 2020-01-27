@@ -1,0 +1,28 @@
+{
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "name": "LoWtool",
+    "version": "2.0.3",
+    "manifest_version": 2,
+    "minimum_chrome_version": "10.0",
+    "externally_connectable": {
+        "matches": ["https://*.forgeofempires.com/game/*"]
+    },
+    "devtools_page": "devtools.html",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "icons": {
+        "16": "images/ico16.png",
+        "32": "images/ico32.png",
+        "48": "images/ico48.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "clipboardWrite",
+        "https://*.forgeofempires.com/game/*"
+    ]
+}
